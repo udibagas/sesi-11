@@ -50,12 +50,12 @@ var schema = buildSchema(`
 
 // resolver
 var root = {
-  products: () => Product.findAll(),
-  product: ({ id }) => Product.findById(id),
-  customers: () => Customer.findAll(),
-  customer: ({ id }) => Customer.findById(id),
-  orders: () => Order.findAll(),
-  order: ({ id }) => Order.findById(id),
+  // products: () => Product.findAll(),
+  // product: ({ id }) => Product.findById(id),
+  // customers: () => Customer.findAll(),
+  // customer: ({ id }) => Customer.findById(id),
+  // orders: () => Order.findAll(),
+  // order: ({ id }) => Order.findById(id),
 };
 
 // app.use(express.urlencoded({ extended: true })); // TODO

@@ -3,7 +3,33 @@ Content-Type: application/json
 
 ###
 
-GET http://localhost:3000/api/v1/products/201
+GET http://localhost:3000/api/v1/products/256
+Content-Type: application/json
+
+###
+POST http://localhost:3000/api/v1/products
+Content-Type: application/json
+
+{
+  "name": "Tahu Bakso",
+  "price": 2000,
+  "stock": 200
+}
+
+###
+
+PUT http://localhost:3000/api/v1/products/256
+Content-Type: application/json
+// affected rows => row yg berhasil diupdate
+
+{
+  "name": "Tahu Aci Jos",
+  "price": 2500,
+  "stock": 300
+}
+
+###
+DELETE http://localhost:3000/api/v1/products/256
 Content-Type: application/json
 
 ###
