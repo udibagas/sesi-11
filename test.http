@@ -1,0 +1,33 @@
+GET http://localhost:3000/api/v1/products
+Content-Type: application/json
+
+###
+
+GET http://localhost:3000/api/v1/products/201
+Content-Type: application/json
+
+###
+
+GET http://localhost:3000/api/v1/orders
+Content-Type: application/json
+
+###
+
+GET http://localhost:3000/api/v1/orders/1
+Content-Type: application/json
+
+###
+GET http://localhost:3000/api/v1/customers
+Content-Type: application/json
+
+###
+POST http://localhost:3000/graphql
+Content-Type: application/json
+
+{
+  "query": "{ products { name price stock } customers { name phone } orders { date qty totalAmount product { name } customer { name } }}"
+}
+
+###
+GET http://localhost:3000/graphql?query={hello}
+Content-Type: application/json
